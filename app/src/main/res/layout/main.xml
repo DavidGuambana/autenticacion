@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".main"
+    tools:foregroundTint="#BC2F2F">
+
+
+    <View
+        android:id="@+id/smallView2"
+        android:layout_width="324dp"
+        android:layout_height="598dp"
+        android:background="@drawable/edittext_rounded_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="157dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="68dp"
+        android:text="SALIR"
+        android:textColor="@color/white"
+        android:textColorLink="#00897B"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/smallView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:backgroundTint="#00897B" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="194dp"
+        android:layout_height="185dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_verified_user_24"
+        tools:src="@drawable/baseline_contact_mail_24"
+        tools:srcCompat="@drawable/baseline_verified_user_24"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="322dp"
+        android:layout_height="56dp"
+        android:text="¡Bienvenido!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/smallView2"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/smallView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtMail"
+        android:layout_width="323dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="4dp"
+        android:text="usuario@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTitle4"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:gravity="center_vertical"
+        tools:textColor="#4FC3F7" />
+
+    <TextView
+        android:id="@+id/textViewTitle4"
+        android:layout_width="262dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="56dp"
+        android:text="Usuario verificado exitosamente"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalir"
+        app:layout_constraintEnd_toEndOf="@+id/smallView2"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
